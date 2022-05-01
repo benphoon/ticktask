@@ -1,0 +1,73 @@
+/* Format: 
+Display (ie Flex), 
+Position (eg Margin), 
+Element Size (eg Height, Width),
+Background (eg Background Image, Background Color,
+Text (eg Font Size, Font Color,
+Borders
+*/
+
+
+.App {
+  margin: auto;
+  
+  width: 80vw;
+
+  text-align: center;
+}
+
+/* Header */
+.App-header {
+  background-color: #141f50;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  border: 2px solid black; 
+}
+
+
+/* Results Component */
+.Results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  min-height: 20vh;
+  width: 100%;
+
+  border: 2px solid black;
+}
+
+.Results {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  margin: auto;
+
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  width: 100%;
+  height: 5vh;
+
+  background-color: #141f50;
+
+  border: 2px solid black; 
+}
+
+footer img {
+  height: 2em;
+}
