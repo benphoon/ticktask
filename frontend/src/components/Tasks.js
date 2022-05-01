@@ -6,9 +6,9 @@ function Tasks(props) {
     let allTasks = props.data
 
     return (
-        <div className='Tasks-container'>
+        <div className='tasks-container'>
             <h2>Your Tasks</h2>
-            <div className='Tasks-list'>
+            <div className='tasks-list'>
                 {allTasks && allTasks.map(task =>
                     <TaskInstance key={task._id} task={task} />
                 )}

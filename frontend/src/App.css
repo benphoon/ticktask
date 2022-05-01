@@ -7,6 +7,12 @@ Text (eg Font Size, Font Color,
 Borders
 */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .App {
   margin: auto;
@@ -29,28 +35,55 @@ Borders
   border: 2px solid black; 
 }
 
-
-/* Results Component */
-.Results-container {
+/* New Task Area */
+.new-task {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  
-  min-height: 20vh;
-  width: 100%;
 
-  border: 2px solid black;
+  height: 20vh;
+
+  border: 1px solid red;
 }
 
-.Results {
+/* Task Container */
+.tasks-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  margin: auto;
 
-  width: 80%;
+  margin-top: 5vh;
+
+  /* border: 2px solid pink; */
+}
+
+.tasks-container h2 {
+  font-size: 3em;
+}
+
+/* Tasks List */
+.tasks-list {
+
+  width: 60%;
+
+  /* border: 1px solid green; */
+}
+
+/* Task Instances */
+.task-instance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 2em;
+  padding: 1em;
+
+  /* width: 50%; */
+
+  border: 2px solid black;
 }
 
 /* Footer */
